@@ -16,6 +16,7 @@ public class Staircase_Que_06 {
 				System.out.print("#");
 			}
 			System.out.println();
+			
 		}
 	}
 

@@ -21,25 +21,23 @@ public class Min_Max_Sum {
 //			if(arr.add(scanner.nextInt()== (String)" "){
 //				break;
 //			}
-			}
+		}
 
-		
-		for (int i = 0; i < 5; i++) {
-			arr.add(scanner.nextInt());
-			if (min > arr.get(i)) {
-				min = arr.get(i);
-			}
-			if (max < arr.get(i)) {
-				max = arr.get(i);
-
-			}
-			sum += arr.get(i);
-
-		
-
-		int res1 = sum - max;
-		int res2 = sum - min;
-		System.out.println(res1 + " " + res2);
+//		for (int i = 0; i < 5; i++) {
+//			arr.add(scanner.nextInt());
+//			if (min > arr.get(i)) {
+//				min = arr.get(i);
+//			}
+//			if (max < arr.get(i)) {
+//				max = arr.get(i);
+//
+//			}
+//			sum += arr.get(i);
+//
+//			int res1 = sum - max;
+//			int res2 = sum - min;
+//			System.out.println(res1 + " " + res2);
+//		}
 
 	}
 
