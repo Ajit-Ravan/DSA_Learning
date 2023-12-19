@@ -1,10 +1,9 @@
 package Step_01_HackerrankQuestions;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.Collection;
 import java.util.Scanner;
+
+
 
 public class JimandtheOrders_Que_39 {
 
@@ -12,22 +11,39 @@ public class JimandtheOrders_Que_39 {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
-		List<Integer> list = new ArrayList<>();
-		Map<Integer, Integer> map = new HashMap<>();
+//		Map<Integer, Integer> map = new HashMap<>();
+//		for(int i=0;i<n;i++) {
+//			map.put(sc.nextInt(), sc.nextInt());	
+//		}
+		int [][] arr = new int[n][2];
 		for(int i=0;i<n;i++) {
-			map.put(sc.nextInt(), sc.nextInt());	
+			for(int j=0;j<2;j++) {
+				arr[i][j]=sc.nextInt();
+			}
 		}
-		System.out.println(map);
-		int sum = 0;
-		Map<Integer, Integer> additionCusto = new HashMap<>();
 
-	    for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            int k =entry.getKey();
-            int value= entry.getValue();
-            additionCusto.put((k+value), value);
-			System.out.println(k+":"+value);
+//        MultiValuedMap<Integer, Integer> additionCusto = new ArrayListValuedHashMap<>();
+
+	
+		int [] s = new int[n];
+		for(int i=0;i<n;i++) {
+			int sum =0;
+			for(int j=0;j<2;j++) {
+				if(j!=2-1) {
+				sum = arr[i][j]+arr[i][j+1];
+				}
+			}
+			s[i]=sum;
+			additionCusto.put(sum, i+1);
+			
+		}
+		Collection<Integer> values = additionCusto.values();
+       
+        for (Integer value : values) {
+            System.out.print(value+" ");
         }
-	    System.out.println(additionCusto);
+
+		
 		
 
 	}
