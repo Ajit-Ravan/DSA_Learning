@@ -3,7 +3,7 @@ package Step_01_HackerrankQuestions;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class InsertionSort_Part1 {
+public class InsertionSort_Part1_42 {
 
 	public static void main(String[] args) {
 
