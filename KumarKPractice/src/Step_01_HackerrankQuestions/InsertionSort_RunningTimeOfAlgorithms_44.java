@@ -3,10 +3,11 @@ package Step_01_HackerrankQuestions;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class InsertionSort_RunningTimeOfAlgorithms {
+public class InsertionSort_RunningTimeOfAlgorithms_44 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		//OUR CODE FAILED 3 TEST CASESE
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		int[] arr = new int[n];
@@ -49,7 +50,21 @@ public class InsertionSort_RunningTimeOfAlgorithms {
 			s += count;
 		}
 		System.out.println(s);
-
+		
+		//SOLUTION CODE
+		
+//		int count =0;
+//		for(int i=0;i<arr.size();i++) {
+//			int j=i;
+//			while(j>=0 && arr.get(j)>arr.get(j+1)) {
+//				int num = arr.get(j);
+//				arr.set(j,arr.get(j+1));
+//				arr.set(j+1,num);
+//				count++;
+//				j--;
+//			}
+//		}
+//		return count;
 
 	}
 

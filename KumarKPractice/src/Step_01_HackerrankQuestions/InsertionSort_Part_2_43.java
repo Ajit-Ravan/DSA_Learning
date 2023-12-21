@@ -3,7 +3,7 @@ package Step_01_HackerrankQuestions;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class InsertionSort_Part_2 {
+public class InsertionSort_Part_2_43 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
