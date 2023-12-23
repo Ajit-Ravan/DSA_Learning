@@ -16,7 +16,6 @@ public class InsertionSort_Part1_42 {
 		int temp = arr[arr.length - 1];
 //		System.out.println(temp);
 		for (int i = arr.length - 2; i >= 0; i--) {
-			
 			if (temp < arr[i]) {
 				arr[i + 1] = arr[i];
 			} else if (temp > arr[i] && temp <= arr[i + 1]) {
@@ -24,14 +23,11 @@ public class InsertionSort_Part1_42 {
 			} else {
 				break;
 			}
-
 			for (int e : arr) {
 				System.out.print(e + " ");
 			}
 			System.out.println();
-
 		}
-		
 		if (arr[0] == arr[1]) {
 			arr[0] = temp;
 			for (int e : arr) {
