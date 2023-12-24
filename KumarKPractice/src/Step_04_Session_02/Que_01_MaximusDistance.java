@@ -15,13 +15,11 @@ public class Que_01_MaximusDistance {
 		for (int i = 0; i < arr.length; i++) {
 			arr[i] = sc.nextInt();
 		}
-		List<Integer> list = new ArrayList<>();
 		int max = Integer.MIN_VALUE;
 		for (int i = 0; i < arr.length; i++) {
 			int imax = 0;
 			for (int j = i + 1; j < arr.length; j++) {
 				if (arr[i] == arr[j]) {
-					list.add(i);
 //					System.out.println(i + "...i");
 					if (i < j) {
 						imax = j;
@@ -33,7 +31,6 @@ public class Que_01_MaximusDistance {
 				max = imax - i;
 			}
 //			System.out.println(max);
-			list.add(max);
 		}
 		System.out.println(max);
 //		System.out.println(list);
