@@ -11,8 +11,8 @@ public class Que_45_CavityMap {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		List<String> grid = new ArrayList<>();
-		int n=sc.nextInt();
-		for(int i=0;i<n;i++) {
+		int n = sc.nextInt();
+		for (int i = 0; i < n; i++) {
 			grid.add(sc.next());
 		}
 		List<String> ans = new ArrayList<>();
@@ -27,7 +27,7 @@ public class Que_45_CavityMap {
 						str = str + s.charAt(j);
 //						System.out.println(str);
 					} else {
-						int topEle = grid.get(i-1).charAt(j) - '0';
+						int topEle = grid.get(i - 1).charAt(j) - '0';
 						int bottomEle = grid.get(i + 1).charAt(j) - '0';
 						int leftEle = s.charAt(j - 1) - '0';
 						int rightEle = s.charAt(j + 1) - '0';
@@ -42,7 +42,7 @@ public class Que_45_CavityMap {
 				ans.add(str);
 			}
 		}
-		for(String m:ans) {
+		for (String m : ans) {
 			System.out.println(m);
 		}
 
