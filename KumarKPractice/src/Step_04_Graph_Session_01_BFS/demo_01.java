@@ -5,17 +5,24 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 //Input:
-//5 4 
+//10 8
 //1 2
-//2 3 
-//3 4 
-//4 5
+//1 3
+//1 4
+//1 5
+//2 10
+//3 6
+//4 6
+//6 9
 //Output:
 //1 0
 //2 1
-//3 2
-//4 3
-//5 4
+//3 1
+//4 1
+//5 1
+//10 2
+//6 2
+//9 3
 
 
 public class demo_01 {
