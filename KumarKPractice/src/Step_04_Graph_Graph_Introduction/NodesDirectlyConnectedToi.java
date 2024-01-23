@@ -2,6 +2,18 @@ package Step_04_Graph_Graph_Introduction;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+//Input 
+//5 4 
+//0 1 
+//1 2 
+//2 3 
+//4 2 
+//OUtput
+//0 1
+//1 2
+//2 3
+//3 1
+//4 1
 
 public class NodesDirectlyConnectedToi {
 	public static void main(String[] args) {
