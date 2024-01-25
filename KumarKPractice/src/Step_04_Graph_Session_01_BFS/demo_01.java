@@ -74,7 +74,7 @@ public class demo_01 {
 					// visit it
 					q.add(u);
 					used[u] = 1; // it has now been visited hence setting its value as 1
-					lvl[u] = lvl[v] + 1; // lvl[u] will be 1 greater than lvl[1] as we move 1 step forward from u to v
+					lvl[u] = lvl[u] + 1; // lvl[u] will be 1 greater than lvl[1] as we move 1 step forward from u to v
 				}
 			}
 		}
