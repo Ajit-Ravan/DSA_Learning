@@ -10,7 +10,9 @@ public class CountPairsWithSum_K {
 	        HashMap<Integer, Integer> f = new HashMap<Integer, Integer>();
 	        int res = 0;
 	        for (int i : nums) {
+	        	System.out.println(res +" "+f.getOrDefault(i-k, 0)+" : "+f.getOrDefault(i+k, 0));
 	            res += f.getOrDefault(i - k, 0) + f.getOrDefault(i + k, 0);
+	            
 	            f.put(i, f.getOrDefault(i, 0) + 1);
 	        }
 	        return res;
