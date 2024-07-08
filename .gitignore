@@ -1,1 +1,4 @@
 /.metadata/
+
+.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml
+
